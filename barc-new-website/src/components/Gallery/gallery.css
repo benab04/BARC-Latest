@@ -1,0 +1,30 @@
+.gallery-page{
+    /* display: flex;
+    flex-direction: column; */
+    align-content: center;
+    justify-content: center;
+    padding:10px 0 0 0;
+    
+    width:100vw;
+    /* height:100vh; */
+   padding-bottom: 0;
+   background-image: url("./SVG/wave6.svg") ;
+   background-position: center;
+   background-size: cover;
+}
+#gallery{
+    background-color: #08707f;
+    padding-bottom:60px;
+}
+.gallery-title{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color:lavender;
+    font-weight: 600;
+    padding: 3rem 0 0 0;
+}s
+.gallery-slides{
+    margin-top: -20px;
+    scale:0.7;
+}

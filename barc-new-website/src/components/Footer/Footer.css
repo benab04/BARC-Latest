@@ -1,0 +1,45 @@
+.footer-outer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(43,43,43);
+    color:white;
+    position: relative;
+    font-size: 20px;
+    
+}
+.footer-outer>p{
+  text-align: center;
+}
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+  }
+
+  .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%,-34%);
+    background-color: black;
+    z-index: 1;
+  }
+
+  .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: lightblue;
+    transform: translate(-4%, -50%);
+    /* z-index: -1; */
+  }
