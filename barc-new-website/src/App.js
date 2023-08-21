@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Teams";
 import View from "./components/View/View";
 import { HashRouter } from 'react-router-dom';
+import PageNavbar from "./components/PageNavbar/PageNavbar"
 // import ReactDOM from "react-dom/client";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -21,8 +22,9 @@ function App(){
     <>
     <HashRouter>
       <Routes>
-        <Route path='/' element={<View/>} />
-        <Route path="/team" element={<Team/>}/>
+        <Route exact path='/' element={<View/>} />
+        <Route exact path="/team" element={<div><PageNavbar/><Team/><Footer/></div>}/>
+        <Route exact path="/home-page" element={<View />}/>
       </Routes>
     </HashRouter>
 
